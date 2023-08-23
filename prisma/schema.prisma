@@ -10,10 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Admin {
+model Barangay {
   id                  String          @id @default(cuid()) @map("_id")
   city                String
   barangay            String 
   email               String          @unique
   password            String
 }
+
